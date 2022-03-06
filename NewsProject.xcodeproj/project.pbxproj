@@ -13,6 +13,10 @@
 		FAD7DDD627D3D25800351931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD7DDD427D3D25800351931 /* Main.storyboard */; };
 		FAD7DDD827D3D25E00351931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD7DDD727D3D25E00351931 /* Assets.xcassets */; };
 		FAD7DDDB27D3D25E00351931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD7DDD927D3D25E00351931 /* LaunchScreen.storyboard */; };
+		FAD7DDE327D3D49D00351931 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7DDE227D3D49D00351931 /* NewsCell.swift */; };
+		FAD7DDEB27D4DFB400351931 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7DDEA27D4DFB400351931 /* News.swift */; };
+		FAD7DDED27D4E78500351931 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7DDEC27D4E78500351931 /* Webservice.swift */; };
+		FAD7DDEF27D528F100351931 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7DDEE27D528F100351931 /* NewsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		FAD7DDD727D3D25E00351931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAD7DDDA27D3D25E00351931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAD7DDDC27D3D25E00351931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD7DDE227D3D49D00351931 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		FAD7DDEA27D4DFB400351931 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		FAD7DDEC27D4E78500351931 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		FAD7DDEE27D528F100351931 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		FAD7DDCD27D3D25800351931 /* NewsProject */ = {
 			isa = PBXGroup;
 			children = (
-				FAD7DDCE27D3D25800351931 /* AppDelegate.swift */,
-				FAD7DDD027D3D25800351931 /* SceneDelegate.swift */,
-				FAD7DDD227D3D25800351931 /* ViewController.swift */,
+				FAD7DDE727D4DF5C00351931 /* Service */,
+				FAD7DDE627D4DF5400351931 /* ViewModel */,
+				FAD7DDE527D4DF4E00351931 /* Model */,
+				FAD7DDE427D4DF4600351931 /* View */,
 				FAD7DDD427D3D25800351931 /* Main.storyboard */,
 				FAD7DDD727D3D25E00351931 /* Assets.xcassets */,
 				FAD7DDD927D3D25E00351931 /* LaunchScreen.storyboard */,
 				FAD7DDDC27D3D25E00351931 /* Info.plist */,
 			);
 			path = NewsProject;
+			sourceTree = "<group>";
+		};
+		FAD7DDE427D4DF4600351931 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7DDCE27D3D25800351931 /* AppDelegate.swift */,
+				FAD7DDD027D3D25800351931 /* SceneDelegate.swift */,
+				FAD7DDD227D3D25800351931 /* ViewController.swift */,
+				FAD7DDE227D3D49D00351931 /* NewsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAD7DDE527D4DF4E00351931 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7DDEA27D4DFB400351931 /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAD7DDE627D4DF5400351931 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7DDEE27D528F100351931 /* NewsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FAD7DDE727D4DF5C00351931 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7DDEC27D4E78500351931 /* Webservice.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD7DDEF27D528F100351931 /* NewsViewModel.swift in Sources */,
 				FAD7DDD327D3D25800351931 /* ViewController.swift in Sources */,
 				FAD7DDCF27D3D25800351931 /* AppDelegate.swift in Sources */,
+				FAD7DDED27D4E78500351931 /* Webservice.swift in Sources */,
+				FAD7DDE327D3D49D00351931 /* NewsCell.swift in Sources */,
+				FAD7DDEB27D4DFB400351931 /* News.swift in Sources */,
 				FAD7DDD127D3D25800351931 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
